@@ -1,7 +1,11 @@
 /*
  * Globals
  */
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* Custom default button */
 .btn-light,
@@ -40,7 +44,7 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  justify-content: flex-start;
     align-items: center;
     gap: 12px;
 }
