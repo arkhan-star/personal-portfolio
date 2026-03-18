@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Al-Ridhaa Khan | Projects</title>
-    <link href="cover.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
       body {
-        padding-top: 72px;
+        padding-top: 105px;
+      }
+      @media (min-width: 768px) {
+        body {
+          padding-top: 72px;
+        }
       }
       .project-icon-header {
         padding: 1.5rem;
@@ -30,7 +35,7 @@
   <body class="bg-light text-center">
 
     <!-- Navbar -->
-    <header class="px-5 p-3 text-white w-100 fixed-top" style="background: rgba(0,0,0,0.85);">
+    <header class="px-5 p-3 text-white w-100 fixed-top" style="background: rgba(0,0,0,0.75);">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
         <h3 class="mb-0"><a href="./index.html" class="text-white text-decoration-none">Portfolio</a></h3>
         <nav class="nav nav-masthead">
@@ -49,7 +54,7 @@
     </div>
 
     <!-- AI & AUTOMATION -->
-    <div class="container p-3">
+    <div class="container p-3" id="ai-automation">
       <div class="section-divider"></div>
       <h2 class="text-start mb-1"><i class="bi bi-robot me-2 text-primary"></i>AI & Automation</h2>
       <p class="text-muted text-start mb-3">AI system design, prompt engineering, governance, and automation implementations.</p>
@@ -83,7 +88,7 @@
             </div>
             <div class="card-body text-start">
               <h5 class="card-title">AI Marker Chatbot – Academic Support Automation</h5>
-              <p class="text-muted small mb-2"><i class="bi bi-building me-1"></i>Valenture Institute</p>
+              <p class="text-muted small mb-2"><i class="bi bi-building me-1"></i>Valenture Institute </p>
               <p class="card-text">Designed and deployed an AI-powered chatbot integrated into Google Chat and Spaces, using semantic search (LangChain & FAISS) over the Marker Handbook to resolve grading queries instantly. Deployed serverlessly on Google Cloud Run.</p>
               <div class="mt-2">
                 <span class="badge bg-primary">Python / Flask</span>
@@ -137,7 +142,7 @@
               <p class="card-text">Developed a comprehensive IT Roadmap aligned to ITIL, NIST, and ISO frameworks across 7 strategic pillars: infrastructure, security, DevOps, innovation, and more. Conducted systems audits, stakeholder check-ins, and produced a visual roadmap for SLT approval.</p>
               <div class="mt-2">
                 <span class="badge bg-dark">IT Strategy</span>
-                <span class="badge bg-secondary">ITIL / NIST / ISO</span>
+                <span class="badge bg-secondary">ITIL | NIST | ISO</span>
                 <span class="badge bg-primary">Jira</span>
                 <span class="badge bg-success">Confluence</span>
               </div>
@@ -276,7 +281,7 @@
               <p class="text-muted small mb-2"><i class="bi bi-building me-1"></i>Excellerate Property Services &nbsp;|&nbsp; Sep 2017 – Mar 2018</p>
               <p class="card-text">Led the migration of 184 operational sites from MTN MPLS to a Vodacom-managed WAN solution. Coordinated landlords, ISPs, and ICT engineers; installed and configured MikroTik devices; decommissioned existing MPLS links and validated cutover at each site with minimal downtime.</p>
               <div class="mt-2">
-                <span class="badge bg-dark">WAN / MPLS</span>
+                <span class="badge bg-dark">WAN | MPLS</span>
                 <span class="badge bg-primary">MikroTik</span>
                 <span class="badge bg-secondary">Network Infrastructure</span>
                 <span class="badge bg-success">Multi-Site Rollout</span>
