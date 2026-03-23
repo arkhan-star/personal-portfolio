@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Navigation Bar */
 
 .nav-masthead .nav-link {
@@ -42,11 +46,16 @@
     gap: 12px;
 }
 
-/* Projects Section - Pertains to future cards with varying picture sizes */ 
+/* Projects Section - Pertains to future cards with varying picture sizes */
 
 .card-img-top {
     height: 220px;
     object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -57,6 +66,39 @@
     color: white;
     background-color: #333;
     text-align: center;
+}
+
+/* Hero Entrance Animations */
+
+@keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title {
+    animation: heroFadeUp 0.8s ease forwards;
+}
+
+.hero-subtitle {
+    opacity: 0;
+    animation: heroFadeUp 0.8s ease 0.2s forwards;
+}
+
+.hero-btn {
+    opacity: 0;
+    animation: heroFadeUp 0.8s ease 0.4s forwards;
+}
+
+/* Nav Scroll Effect */
+
+header.fixed-top {
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.fixed-top.scrolled {
+    background: rgba(0, 0, 0, 0.92) !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
 }
 
 /* Responsive Adjustments */
